@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100Vh;
+    width: 100%;
+   
+    background-color:rgb(90, 99, 90);
+}
+#card{
+    overflow: hidden;
+    
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#header{
+   
+    height: 10%;
+    width: 100%;
+    background-color: green;
+}
+#inner{
+    display: flex;
+   margin: 0% 30%;
+   justify-content: space-between;
+    align-items: center;
+
+}
+h3{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background:white;
+    width: 25px;
+}
+#display{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+justify-content: center;
+
+}
+#boll{
+    
+    width: 7%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 7px;
+    font-size: 25px;
+    background-color: green;
+
+}
+#boll:hover{
+    background: rgb(109, 124, 109);
+
+}
+#game{
+    display: flex;
+    margin: 10px;
+    color: red;
+    justify-content: center;
+    align-items: center;
+    
+}
