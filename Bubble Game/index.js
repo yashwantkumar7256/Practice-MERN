@@ -44,25 +44,38 @@ document.querySelector("#display")
  createBubble();
   }
 })
-var time=60;
+  var time;
+  var st;
 function timer(){
+   
+    clearInterval(st);
+     time=60;
+     document.querySelector('#clock').innerHTML=time;
     
- var st=setInterval(function(){
+     st=setInterval(function(){
     if(time>0){
-        time--;
+        
+        time-=1;
         document.querySelector('#clock').innerHTML=time;
     } else{
         clearInterval(st);
         document.querySelector('#display').innerHTML=`<h1 id='game'>GAME OVER<h1/>`;
+       
     }
     },1000)
    
 }
 
+
+function stHandler(){
+   timer();
+    console.log("st")
+ createBubble();
+hitBubble();
+
+
+}
     
 
 
-createBubble();
-hitBubble();
-timer();
 
