@@ -8,13 +8,16 @@ const Header = () => {
    
    <nav className='flex justify-between bg-amber-50 px-20 py-5'>
     Homex
-    <div className='flex gap-5 '>
-        <div>Home</div>
+    <div className='hidden sm:flex gap-5 '>
+        
+        <div >Home</div>
          <div>Risedence</div>
           <div>value</div>
            <div>Reviwe</div>
            <div>contect</div>
+           
     </div>
+
     <button>GetStartd</button>
 
    </nav>
@@ -24,7 +27,7 @@ const Header = () => {
         <div className='my-30 mx-20'>
             <div className=' whitespace-nowrap flex bg-white px-5 rounded-2xl w-60'>Trusted by 10k+ custumers </div>
 
-        <div className='text-5xl font-bold tracking-wide '> 
+        <div className='text-5xl font-bold tracking-wide  '> 
         <div>Discover Most</div>
         <div>Sutable</div>
         <div>propertey</div>
@@ -46,7 +49,7 @@ const Header = () => {
         
         
     </div>
-    <div className='bg-amber-400 h-full w-xl'></div>
+    <div className='bg-amber-400 h-[90vh] w-xl'></div>
    </div>
  </> )
 }
