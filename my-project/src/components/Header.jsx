@@ -1,14 +1,15 @@
 import React from 'react'
 import Number from './Number'
+import Residence from './Residence'
 
 const Header = () => {
    
   return (
     <>
    
-   <nav className='flex justify-between bg-amber-50 px-20 py-5'>
+   <nav className='flex fixed w-full justify-between font-extrabold bg-amber-50 px-20 py-5'>
     Homex
-    <div className='hidden sm:flex gap-5 '>
+    <div className='hidden  hover:border-amber-300 font-bold sm:flex gap-5 '>
         
         <div >Home</div>
          <div>Risedence</div>
@@ -49,8 +50,13 @@ const Header = () => {
         
         
     </div>
-    <div className='bg-amber-400 h-[90vh] w-xl'></div>
+    <div className=' h-80 mt-50 w-xl'>
+      <a href="#">
+        <img className='h-full w-full  object-cover rounded-2xl overflow-hidden' src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740" alt="" />
+      </a>
+    </div>
    </div>
+   <Residence/>
  </> )
 }
 
