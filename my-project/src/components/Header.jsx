@@ -1,6 +1,8 @@
 import React from 'react'
 import Number from './Number'
 import Residence from './Residence'
+import { Home, House } from 'lucide-react';
+import { Link, Route, Routes  } from 'react-router-dom';
 
 const Header = () => {
    
@@ -8,11 +10,16 @@ const Header = () => {
     <>
    
    <nav className='flex fixed w-full justify-between font-extrabold bg-amber-50 px-20 py-5'>
-    Homex
+    <div className='flex'> <House />
+    Homex</div>
+    
     <div className='hidden  hover:border-amber-300 font-bold sm:flex gap-5 '>
         
+        
+
+
         <div >Home</div>
-         <div>Risedence</div>
+         <Link to="/residance">Risedence</Link>
           <div>value</div>
            <div>Reviwe</div>
            <div>contect</div>
