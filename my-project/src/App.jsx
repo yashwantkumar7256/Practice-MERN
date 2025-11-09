@@ -1,25 +1,30 @@
-import React from 'react'
-import Header from './components/Header'
+
 import { Route, Routes } from 'react-router-dom'
-import Residence from './components/Residence'
+import Contect from './components/Contect'
+import Header from './components/Header'
+import Home from './Pages/Home'
+import Value from './Pages/Value'
 
 
 
 
 
+
+ 
 
 
 const App = () => {
   return (<>
-  <div>
-   <Header/>
-    <Routes>
-      <Route path='/' element={<Header/>}/>
-      
-     
+  <Routes>
+    <Route  path='/' element={  <Header/>}/>
+    <Route path='/contect' element={<Contect/>}/>
+     <Route path='/value' element={<Value/>}/>
 
-    </Routes>
-    </div>
+  </Routes>
+
+ 
+
+    
  </> )
 }
 

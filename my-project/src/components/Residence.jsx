@@ -36,7 +36,7 @@ const Residence = () => {
   return (
     <>
     
-        <div className='h-screen w-full '>
+        <div className='h-screen w-full  mt-80  md:mt-0  '>
            <div className='h-30 pt-10  w-[70%] mx-[15%]'>
             <div className='  font-bold whitespace-nowrap text-4xl flex justify-center items-center'>
              POPULAR RESIDANCES
@@ -44,14 +44,14 @@ const Residence = () => {
             <div className=''>
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium suscipit dicta asperiores reiciendis facili.
       </div>
-      <div className='flex gap-5 whitespace-nowrap mt-10 justify-center'>
+      <div className='flex my-10 gap-5 whitespace-nowrap md:mt-10 justify-center'>
      <Button name="All property" />
      <Button name="Value" />
      <Button name="villas" />
      <Button name="Best deals" />
      
      </div >
-     <div className='flex  h-140 flex-row    overflow-auto  min-w-170    '>
+     <div className=' md:flex  h-140 flex-row my-0 md:my-20  overflow-auto  min-w-170    '>
      {Details.map(( elem,idx)=>{
 
       return <Card  key={idx}  img={elem.img} price={elem.price} loc={elem.location} rating={elem.rating}/>
