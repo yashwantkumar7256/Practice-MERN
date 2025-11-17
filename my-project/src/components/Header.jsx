@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom';
 
 
 
-const Header = () => {
+const Header = (props) => {
+ 
    
   return (
     <>
@@ -64,7 +65,8 @@ const Header = () => {
       </a>
     </div>
    </div>
-   <Residence/>
+   
+   <Residence setProdctid={props.setProdctid}/>
  </> )
 }
 

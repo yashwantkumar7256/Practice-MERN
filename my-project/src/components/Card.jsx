@@ -2,7 +2,15 @@
 import { MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const Card = (props) => (
+const Card = (props) => {
+
+  
+  const Handler=(id)=>{
+props.setProdctid(id);
+
+  }
+  return (
+ 
   <>
  <div className='group h-100 w-81 gap-10 flex'>
   <div className='bg-white border-2 border-blue-100 overflow-auto h-100 w-81 m-5 rounded-2xl '>
@@ -26,7 +34,11 @@ const Card = (props) => (
         <h1>3 Bath</h1>
         <h1>3000sqft</h1>
       </div>
-      <Link className='flex justify-center mt-3' to='/contect'><button id='btn' className='flex  border-2 border-b-black w-[70%] rounded-2xl justify-center hover:bg-amber-200 font-bold active:bg-black hidden group-hover:block' >Buy</button></Link>
+      <Link className='flex justify-center mt-3' to='/contect'><button
+       onClick={()=>{
+        Handler(props.id);
+       }}
+       id='btn' className='flex  border-2 border-b-black w-[70%] rounded-2xl justify-center hover:bg-amber-200 font-bold active:bg-black hidden group-hover:block' >Buy</button></Link>
 
     </div>
     
@@ -34,5 +46,6 @@ const Card = (props) => (
     
   </>
 )
+}
 
 export default Card
