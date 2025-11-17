@@ -10,7 +10,7 @@ setprodctid(id)
   }
   return (
     <>
-    <div className='flex flex-wrap'>
+    <div className='flex flex-wrap  flex flex-wrap '>
     {
       productList.map((product,index)=>{
         return <div key={index} className=''>
@@ -21,7 +21,7 @@ setprodctid(id)
    <div>battary={product.battery}</div>
    <button onClick={()=>{
     Handler(product.id);
-   }} className='bg-green-200 flex px-5  justify-center items-center rounded-2xl mx-10' > add to cart</button>
+   }} className='bg-green-200 flex px-5  justify-center items-center rounded-2xl mx-10 ' > add to cart</button>
     
 
      </div>
