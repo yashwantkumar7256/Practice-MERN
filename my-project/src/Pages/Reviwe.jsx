@@ -3,9 +3,12 @@ import Rcard from './Rcard'
 
 const Reviwe = () => {
   return (
-    <div className='bg-black h-screen'>
-      <h1>reviwe</h1>
-      <Rcard/>
+    <div className='bg-black h-screen '>
+    
+    <div className='py-10'>
+        <Rcard/>
+    </div>
+      
     </div>
   )
 }

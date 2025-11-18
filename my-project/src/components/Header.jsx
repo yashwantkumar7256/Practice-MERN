@@ -3,6 +3,9 @@ import Number from './Number'
 import Residence from './Residence'
 import { Home, House } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Third from './Third';
+import Footer from './Footer';
+
 
 
 
@@ -32,8 +35,8 @@ const Header = (props) => {
    </nav>
    
    <div className='bg-sky-100 h-screen pt-5  md:flex w-100% gap-10'>
-    <div className=' h-full  w-xl'>
-        <div className=' m-2 md:my-30 md:mx-20'>
+    <div className=' h-full  w-full'>
+        <div className=' m-2 md:my-30 md:mx-20  '>
             <div className=' whitespace-nowrap flex bg-white px-5 rounded-2xl w-60'>Trusted by 10k+ custumers </div>
 
         <div className=' text-4xl m-5 md:text-5xl font-bold tracking-wide  '> 
@@ -41,7 +44,7 @@ const Header = (props) => {
         <div>Sutable</div>
         <div>propertey</div>
         </div>
-        <div className='mt-10 w-85 sm:w-105
+        <div className='mt-10 w-85 sm:w-20
         md:w-full '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum libero autem commodi ad animi placeat ipsa reiciendis iure odio provident? Qui tempore deserunt perspiciatis pariatur aliquam odio sunt aspernatur dicta!</div>
       <div className='bg-amber-50 w-50 md:w-full rounded-2xl pl-2 my-10 flex justify-between'>
         <input  type="text" placeholder='SerchBar' />
@@ -67,6 +70,8 @@ const Header = (props) => {
    </div>
    
    <Residence setProdctid={props.setProdctid}/>
+   <Third/>
+   <Footer/>
  </> )
 }
 

@@ -51,7 +51,7 @@ const Residence = (props) => {
      <Button name="Best deals" />
      
      </div >
-     <div className=' md:flex  h-140 flex-row my-0 md:my-20  overflow-auto  min-w-170    '>
+     <div className=' md:flex  h-140 flex-row my-0 md:my-20  overflow-auto      '>
      {Details.map(( elem,idx)=>{
 
 return <Card setProdctid={props.setProdctid}  key={idx} id={elem.id} img={elem.img} price={elem.price} loc={elem.location} rating={elem.rating}/>
