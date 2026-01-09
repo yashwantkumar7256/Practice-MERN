@@ -39,3 +39,11 @@ transition: all ease 0.3s;
     -webkit-background-clip: text;
     color: transparent;
 }
+#menu{
+    
+    position:fixed;
+    background-color: rgb(110, 110, 118);
+    height: 50px;
+    width: 30px;
+    margin-top: 50px;
+}

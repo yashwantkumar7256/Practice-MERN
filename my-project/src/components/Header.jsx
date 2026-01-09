@@ -10,6 +10,14 @@ import Footer from './Footer';
 
 
 const Header = (props) => {
+
+ 
+  // const start =document.querySelector('#start')
+  // const manu =document.querySelector('#manu')
+  //  start.addEventListener('click',()=>{
+  //   manu.style.display='block'
+  //  });
+  
  
    
   return (
@@ -30,9 +38,11 @@ const Header = (props) => {
            
     </div>
 
-    <button>GetStartd</button>
-
+    <button id='start'>GetStartd</button>
+    
+   
    </nav>
+   
    
    <div className='bg-sky-100 h-screen pt-5  md:flex w-100% gap-10'>
     <div className=' h-full  w-full'>
