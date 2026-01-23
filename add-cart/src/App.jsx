@@ -5,6 +5,8 @@ import { Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
 import { useEffect, useState } from 'react'
 import productList from './components/data'
+import Login from './components/login'
+import Register from './components/Register'
 
 const App = () => {
   const [productid ,setproductid]=useState('');
@@ -31,6 +33,8 @@ var filterobj=productList.filter((product)=>{
 
    <Route path='/cart' element={<Cart filter={cartAll}/>}/>
     </Routes>
+    <Login/>
+    <Register/>
 
          
        </>
